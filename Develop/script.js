@@ -1,16 +1,10 @@
 // Assignment Code
-var generateBtn = document.querySelector("#generate");
-
-generateBtn.addEventListener("click", window);
-generateBtn.addEventListener("click", writePassword);
-
-var userChoice = window.prompt("password criteria:length (8 to 125) characters");
-console.log(userChoice)
-window.prompt("character types to include? !,#,$,%,&,',(,),*,+,-,.,/,:,;,<,=,>,?,@,[,^,_,`,{,|,},~,");
-window.prompt ("do you want to include lowercase? (yes or no)");
-window.prompt("Include uppercase? (Yes or No)");
-window.prompt("Include numeric? (Yes or No)");
-
+let generateBtn = document.querySelector("#generate");
+// function 
+//    let generate = "generatebtn";
+//    console.log (generate);
+//    return;
+// }
 
 // Write password to the #password input
 
@@ -21,22 +15,19 @@ function writePassword() {
   passwordText.value = password;
 
 }
+var userChoice = window.prompt("password criteria:length (8 to 125) characters");
+console.log(userChoice)
 
-// const generate = generatePassword
+window.prompt("character types to include? !,#,$,%,&,',(,),*,+,-,.,/,:,;,<,=,>,?,@,[,^,_,`,{,|,},~,");
+window.prompt ("do you want to include lowercase? (yes or no)");
+window.prompt("Include uppercase? (Yes or No)");
+window.prompt("Include numeric? (Yes or No)");
 
-// // Add event listener to generate button
-// generateBtn.addEventListener("click", writePassword);
+  password += specialCharacters[Math.floor(Math.random() * specialCharacters.length)];
+  password += lowerCases[Math.floor(Math.random() * lowerCases.length)];
+  password += upperCases[Math.floor(Math.random() * upperCases.length)];
 
-
-
-// var minlength= "8";
-// var maxlength= "125";
-// var specialCharacters= "!,#,$,%,&,',(,),*,+,-,.,/,:,;,<,=,>,?,@,[,^,_,`,{,|,},~";
-// var lowerCases= "abcdefghijklmnopqrstuvwxyz";
-// var upperCases= "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-// var number= "0123456789";
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
 
   
-//   password += specialCharacters[Math.floor(Math.random() * specialCharacters.length)];
-//   password += lowerCases[Math.floor(Math.random() * lowerCases.length)];
-//   password += upperCases[Math.floor(Math.random() * upperCases.length)];
