@@ -1,10 +1,10 @@
 // Assignment Code
 let generateBtn = document.querySelector("#generate");
-// function 
-//    let generate = "generatebtn";
-//    console.log (generate);
-//    return;
-// }
+function writePassword() {
+   generate = "generatebtn";
+   console.log (generate);
+   
+}
 
 // Write password to the #password input
 
@@ -23,11 +23,13 @@ window.prompt ("do you want to include lowercase? (yes or no)");
 window.prompt("Include uppercase? (Yes or No)");
 window.prompt("Include numeric? (Yes or No)");
 
-  password += specialCharacters[Math.floor(Math.random() * specialCharacters.length)];
-  password += lowerCases[Math.floor(Math.random() * lowerCases.length)];
-  password += upperCases[Math.floor(Math.random() * upperCases.length)];
+
+    // password += specialCharacters[Math.floor(Math.random() * specialCharacters.length)];
+  
+    // password += lowerCases[Math.floor(Math.random() * lowerCases.length)];
+  
+    // password += upperCases[Math.floor(Math.random() * upperCases.length)];
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
 
-  
+generateBtn.addEventListener("click", writePassword);
