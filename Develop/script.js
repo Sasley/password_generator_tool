@@ -23,7 +23,6 @@ window.prompt ("do you want to include lowercase? (yes or no)");
 window.prompt("Include uppercase? (Yes or No)");
 window.prompt("Include numeric? (Yes or No)");
 
-
     // password += specialCharacters[Math.floor(Math.random() * specialCharacters.length)];
   
     // password += lowerCases[Math.floor(Math.random() * lowerCases.length)];
